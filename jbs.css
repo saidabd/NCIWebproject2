@@ -1,0 +1,82 @@
+
+body {
+	font-family: 'raleway', sans-serif;
+	background-color: beige;
+
+}
+
+.nav ul {
+	list-style: none;
+	margin:auto;
+	padding:0;
+	border: 0.1em
+	background-color: beige;
+	text-align:center;
+}
+.nav li {	
+	display: inline-block;
+	padding: 0.5em;
+	font-size: 2em;
+}
+
+.nav li a {
+
+	text-decoration: none;
+	color: maroon;
+	padding: 1em 1em;
+	display: block;
+	
+}
+/*logo position*/
+.nav img {
+	float: left;
+	padding-left:5%;
+	padding-bottom:0.5%;
+	width: 4%;
+	height: 4%
+
+}
+
+/*at the moment the "slide show" is just a single picture, 
+we could use java script to make it an actual picture and include pictures that bernd has taken
+consider an hr line instead of top border ?
+*/
+.slideshow img{
+	display: block;
+	margin:auto;
+	width:100%;
+	padding:0;
+	border-top-style:solid;
+	border-top-color:maroon;
+	border-top-width: 1em;
+}
+.slideshow h2 span{
+	position:absolute;
+	top:30%;
+	right:0.5%;
+	color:white;
+	font-size:3.5em;
+	background-color:maroon;
+}
+.imgMenu {
+	padding-top:2em;
+	display:block;
+	margin:auto;
+	
+}
+
+.imgMenu img{
+	width:21em;
+	height:13em;
+	padding-top:2em;
+	padding-right:13em;
+}
+hr {
+	color: maroon;
+	background-color: maroon;
+	padding:0;
+	margin-top:em;
+	margin-bottom:0;
+	height:0.15em;
+	border-style:solid;
+}
