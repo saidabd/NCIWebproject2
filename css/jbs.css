@@ -2,7 +2,6 @@
 body {
 	font-family: 'raleway', sans-serif;
 	background-color: beige;
-
 }
 
 .nav ul {
@@ -13,20 +12,26 @@ body {
 	background-color: beige;
 	text-align:center;
 }
+
 .nav li {	
 	display: inline-block;
 	padding: 0.5em;
-	font-size: 2em;
+	font-size: 1em;
 }
 
 .nav li a {
-
 	text-decoration: none;
 	color: maroon;
 	padding: 1em 1em;
 	display: block;
-	
 }
+
+.nav li a:hover {
+/* flip the colour scheme when the menu link is highlighted */
+	color: beige;
+	background-color: maroon;
+}
+
 /*logo position*/
 .nav img {
 	float: left;
@@ -34,10 +39,10 @@ body {
 	padding-bottom:0.5%;
 	width: 4%;
 	height: 4%
-
 }
 
-/*at the moment the "slide show" is just a single picture, 
+/*
+at the moment the "slide show" is just a single picture, 
 we could use java script to make it an actual picture and include pictures that bernd has taken
 consider an hr line instead of top border ?
 */
@@ -50,33 +55,37 @@ consider an hr line instead of top border ?
 	border-top-color:maroon;
 	border-top-width: 1em;
 }
+
 .slideshow h2 span{
 	position:absolute;
-	top:30%;
+	top: 10%;
 	right:0.5%;
 	color:white;
 	font-size:3.5em;
 	background-color:maroon;
 }
+
 .imgMenu {
 	padding-top:2em;
 	display:block;
 	margin:auto;
-	
 }
 
 .imgMenu img{
 	width:21em;
 	height:13em;
 	padding-top:2em;
-	padding-right:13em;
+	padding-right:2em;
 }
-hr {
-	color: maroon;
-	background-color: maroon;
-	padding:0;
-	margin-top:em;
-	margin-bottom:0;
-	height:0.15em;
-	border-style:solid;
+
+
+.footer {
+	clear: both;
+	background: maroon;
+	color: beige;
+    font-size: 12px;
+}
+
+.footer p {
+	padding: 1px;
 }
