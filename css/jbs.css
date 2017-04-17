@@ -2,88 +2,103 @@
 body {
 	font-family: 'raleway', sans-serif;
 	background-color: beige;
+    color: maroon;
 }
 
-.nav ul {
-	list-style: none;
-	margin:auto;
-	padding:0;
-	border: 0.1em
-	background-color: beige;
-	text-align:center;
+.nav h3 {
+    color: maroon;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.nav li {	
-	display: inline-block;
-	padding: 0.5em;
-	font-size: 1em;
+/*.nav img {
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}*/
+
+// START W3C RESPONSIVE MENU CSS
+/* Add a background color to the top navigation */
+.topnav {
+    background-color: beige;
+    overflow: hidden;
 }
 
-.nav li a {
-	text-decoration: none;
-	color: maroon;
-	padding: 1em 1em;
-	display: block;
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: maroon;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-.nav li a:hover {
-/* flip the colour scheme when the menu link is highlighted */
-	color: beige;
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: maroon;
+    color: beige;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+// END W3C RESPONSIVE MENU CSS
+
+.hero-image{
+    position: relative;
+    display: block;
+    margin: auto;
+    width: 100%;
+    padding: 0;
+    border-top-style: solid;
+    border-top-color: maroon;
+    border-top-width: 1em;
+}
+
+.hero-text{
+	font-size: 4em;
 	background-color: maroon;
+    color: beige;
+    position: absolute;
+    top: 10%;
+    right: 0.5%;
 }
-
-/*logo position*/
-.nav img {
-	float: left;
-	padding-left:5%;
-	padding-bottom:0.5%;
-	width: 4%;
-	height: 4%
-}
-
-/*
-at the moment the "slide show" is just a single picture, 
-we could use java script to make it an actual picture and include pictures that bernd has taken
-consider an hr line instead of top border ?
-*/
-.slideshow img{
-	display: block;
-	margin:auto;
-	width:100%;
-	padding:0;
-	border-top-style:solid;
-	border-top-color:maroon;
-	border-top-width: 1em;
-}
-
-.slideshow h2 span{
-	position:absolute;
-	top: 10%;
-	right:0.5%;
-	color:white;
-	font-size:3.5em;
-	background-color:maroon;
-}
-
-.imgMenu {
-	padding-top:2em;
-	display:block;
-	margin:auto;
-}
-
-.imgMenu img{
-	width:21em;
-	height:13em;
-	padding-top:2em;
-	padding-right:2em;
-}
-
 
 .footer {
 	clear: both;
 	background: maroon;
 	color: beige;
     font-size: 12px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .footer p {
