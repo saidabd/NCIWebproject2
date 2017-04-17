@@ -1,0 +1,104 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own now. -->
+
+	<head>
+		<meta charset="UTF-8"> <!-- HTML5 charset -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+		<link href="css/jbs.css" rel="stylesheet"/>
+		<link href="css/jbs_responsiveMenu.css" rel="stylesheet"/>
+		
+		<!-- Skeleton Responsive CSS -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/skeleton.css">
+		
+		<!-- Favicon -->
+		<link rel="icon" href="images/JBS_Logo_maroon_small.gif">
+				
+		<title>jbs - Get serious with photography</title>
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body>
+		<div class="nav">
+		    <h3>jbs photo</h3>
+		    <!-- <img src="images/JBS_Logo_maroon_small.gif" alt="JBS logo"> -->
+			<div class="topnav" id="myTopnav">
+				<a href="index.html">Home</a>
+				<a href="features.html">Features</a>
+				<a href="userReview.html">User review</a>
+				<a href="lenses.html">Lenses</a>
+				<a href="accessories.html">Accessories</a>
+				<a href="samplePictures.html">Sample Pictures</a>
+				<a href="contact.html">Contact</a>
+				<a href="javascript:void(0);" class="icon" onclick="responsiveMenu()">&#9776;</a>
+			</div>
+			<script>
+			function responsiveMenu() {
+			    var myTopnav = document.getElementById("myTopnav");
+			    if (myTopnav.className === "topnav") {
+			    	myTopnav.className += " responsive";
+			    } else {
+			    	myTopnav.className = "topnav";
+			    }
+			}
+			</script>
+		</div>
+		
+		<div class="contact eleven columns">
+			<form>
+				<div class="row">
+					<div class="email-address six columns">
+						<label for="emailInput">Your email</label>
+						<input class="u-full-width" type="email" placeholder="test@example.com" id="emailInput">
+					</div>
+					<div class="form-select six columns">
+						<label for="reasonInput">Reason for contacting</label>
+						<select class="u-full-width" id="reasonInput">
+							<option value="Option 1">Questions</option>
+							<option value="Option 2">Comment</option>
+							<option value="Option 3">Order Inquiry</option>
+						</select>
+					</div>
+				</div>
+				<label for="message">Message</label>
+				<textarea class="u-full-width" placeholder="Hi Dave …" id="message"></textarea>
+				<label class="send-yourself-copy">
+					<input type="checkbox">
+					<span class="label-body">Send a copy to yourself</span>
+				</label>
+				<input class="button-primary" type="submit" value="Submit">
+			</form>
+		</div>
+		
+		<!-- Java Script From: https://mashe.hawksey.info/examlpes/insert-eg.html -->
+		<!-- <script type="text/javascript">
+		// If the element's string matches the regular expression it is all numbers
+		function isNumeric(elem, helperMsg){
+			var numericExpression = /^[0-9]+$/;
+			if(elem.value.match(numericExpression)){
+				return true;
+			}else{
+				alert(helperMsg);
+				elem.focus();
+				return false;
+			}
+		}
+		function checkBeforeSubmit(){
+			if ((isNumeric(document.getElementById('numbers'), 'Please enter a number'))){
+				document.getElementById('theForm').submit();
+				document.getElementById('success').innerHTML='Submitted';
+			}
+		}
+		</script> -->
+		
+		<div class="footer">Footer &copy;2017</div>
+		
+	</body>
+</html>
