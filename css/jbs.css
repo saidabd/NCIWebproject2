@@ -18,7 +18,7 @@ body {
     padding-right: 5%;
 }*/
 
-.hero-image{
+.hero-image {
     position: relative;
     display: block;
     margin: auto;
@@ -29,13 +29,21 @@ body {
     border-top-width: 1em;
 }
 
-.hero-text{
+.hero-text {
 	font-size: 4em;
-	background-color: maroon;
+	font-weight: bold;
+	text-shadow: -2px 0 maroon, 0 2px maroon, 2px 0 maroon, 0 -2px maroon;
     color: beige;
     position: absolute;
-    top: 10%;
+    top: 0.5%;
     right: 0.5%;
+}
+
+@media screen and (max-width: 600px) {
+	.hero-text {
+		font-size: 2em;
+		text-shadow: -1px 0 maroon, 0 1px maroon, 1px 0 maroon, 0 -1px maroon;
+	}
 }
 
 .footer {
