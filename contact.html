@@ -57,7 +57,7 @@
 		</div>
 		
 		<div class="contact eleven columns">
-			<form>
+			<form action="javascript:sendMail();" name="contactForm" id="contactForm" method="post">
 				<div class="row">
 					<div class="email-address six columns">
 						<label for="emailInput">Your email</label>
@@ -66,9 +66,9 @@
 					<div class="form-select six columns">
 						<label for="reasonInput">Reason for contacting</label>
 						<select class="u-full-width" id="reasonInput">
-							<option value="Option 1">Questions</option>
-							<option value="Option 2">Comment</option>
-							<option value="Option 3">Order Inquiry</option>
+							<option value="Question">Question</option>
+							<option value="Comment">Comment</option>
+							<option value="Order Inquiry">Order Inquiry</option>
 						</select>
 					</div>
 				</div>
@@ -80,6 +80,12 @@
 				</label>
 				<input class="button-primary" type="submit" value="Submit">
 			</form>
+		
+			<script>
+			function sendMail() {
+				window.open('mailto:x16138015@student.ncirl.ie?subject=' + document.getElementById('reasonInput').value + '&body=email: ' + document.getElementById('emailInput').value + ' - ' + document.getElementById('message').value);
+			}
+			</script>
 		</div>
 		
 		<!-- Java Script From: https://mashe.hawksey.info/examlpes/insert-eg.html -->
