@@ -72,6 +72,11 @@ p {
 	font-style: italic;
 }
 
+.review-title p {
+	font-style: italic;
+	font-weight: bold;
+}
+
 .footer {
 	clear: both;
 	background: maroon;
@@ -85,6 +90,4 @@ p {
 	padding: 1px;
 }
 
-.button-primary {
 
-}
