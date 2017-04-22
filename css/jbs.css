@@ -51,9 +51,9 @@ p {
 }
 
 .galleria { 
-	padding: 5%;
+	padding-bottom: 2%;
 	height: 600px; 
-	background: #000;
+	background: beige;
 }
 
 .jbs-container {
