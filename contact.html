@@ -82,7 +82,9 @@
 				var senderEmail = document.getElementById('emailInput').value;
 				var message = document.getElementById('message').value;
 				
-				window.open('mailto:x16138015@student.ncirl.ie?subject=' + subject + '&body=email: ' + senderEmail + ' - ' + message);
+				myWindow = window.open('mailto:x16138015@student.ncirl.ie?subject=' + subject + '&body=email: ' + senderEmail + ' - ' + message);
+				
+				myWindow.close();
 			}
 			</script>
 		</div>
