@@ -78,7 +78,11 @@
 		
 			<script>
 			function sendMail() {
-				window.open('mailto:x16138015@student.ncirl.ie?subject=' + document.getElementById('reasonInput').value + '&body=email: ' + document.getElementById('emailInput').value + ' - ' + document.getElementById('message').value);
+				var subject = document.getElementById('reasonInput').value;
+				var senderEmail = document.getElementById('emailInput').value;
+				var message = document.getElementById('message').value;
+				
+				window.open('mailto:x16138015@student.ncirl.ie?subject=' + subject + '&body=email: ' + senderEmail + ' - ' + message);
 			}
 			</script>
 		</div>
