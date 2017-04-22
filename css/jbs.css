@@ -99,3 +99,16 @@ p {
 }
 
 
+.container a {
+    display: block;
+    color: maroon;
+    text-align: center;
+	font-style: italic;
+	font-size: 1.1em;
+    text-decoration: none;
+}
+
+.container a:hover {
+    background-color: maroon;
+    color: beige;
+}
